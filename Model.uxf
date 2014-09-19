@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>400</x>
+      <y>210</y>
+      <w>170</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>com.talentuno.website
+--
+User
+Talent
+Profile
+Nature
+City
+Country
+Organisation
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>20</y>
+      <w>280</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+User
+--
+-id: Long
++profile: Profile
+--
+#Operation(i: int): int
+/+Connect/
+--
+Responsibilities
+-- Type for Recruiter/Organisation, Recruit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>360</y>
+      <w>270</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Profile
+--
+-id: Long
++firstName: String
++lastName: String
++middleName: String
++currentOrganisation: Organisation
++currentTitle: String
++gender: String
++dateOfBirth: Date
++previousOrganisations: Organisation[]
++education: Education[]
++experience: int
++yearsCurrentOrg: int
++infj: String
++crowns:Crown[]
++recommendations: Recommendation[]
++publications: Publication[]
++certifications: Certification[]
++skillTests: SkillTest[]
++posts: Post[]
++matchingJobs: MatchingJob[]
++iqScore: int
++recentlyViewedProfiles: Profile[]
++similarProfiles: Profile[]
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Holds all possible info about User</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>10</y>
+      <w>210</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Organisation
+--
+-id: Long
++name: String
++country: Country
++city: City
++nature: Nature
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- all information of organisation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>180</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+Country
+--
+India
+Sri Lanka
+Nepal
+...
+--
+Responsibilities
+-- Country in which org, recruiter, recruit are set up</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>240</y>
+      <w>210</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+City
+--
+Bangalore
+Dehli
+Colombo
+Jaffna
+Kathmandu
+...
+--
+Responsibilities
+-- City in which org, recruiter, recruit are set up</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>530</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Education
+--
++course: Course
++institution: Institution
+--
+Responsibilities
+-- Education undergone by recruit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>360</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+Course
+--
+B.E
+M.C.A
+...
+--
+Responsibilities
+-- Course - graduation, post graduation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>460</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+Nature
+--
+computer hardware
+software
+...
+--
+Responsibilities
+-- Nature of organisation or work of recruit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>20</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+Institution
+--
+CMRIT
+Chikka Muniappa Reddy Institute of Technology
+...
+--
+Responsibilities
+-- Institution in which course was completed</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
