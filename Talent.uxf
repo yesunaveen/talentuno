@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>30</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+SkillType
+--
+TECHNICAL
+FUNCTIONAL
+BEHAVIORAL
+...
+--
+Responsibilities
+-- types of skills</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>30</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Score
+--
+-id: Long
++userId: Long
++skillId: Long
++score: float
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Score for a user and skill</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>480</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Opening
+--
+-id: Long
++organisation: Organisation
++position: Position
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- all openings</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>260</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+LikeProfile
+--
+-id: Long
++userId: Long
++likeProfileId: Long
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- handle likes</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>270</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+FlagProfile
+--
+-id: Long
++userId: Long
++flagProfileId: Long
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- handle flags</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Skill
+--
+-id: Long
++type: SkillType
++name: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- all skills</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>500</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;type&gt;&gt;
+Package::com.talentuno.website
+Position
+--
+-id: Long
++position: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- all position</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
