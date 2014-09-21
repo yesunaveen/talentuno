@@ -5,7 +5,7 @@
     <id>UMLPackage</id>
     <coordinates>
       <x>400</x>
-      <y>210</y>
+      <y>170</y>
       <w>170</w>
       <h>140</h>
     </coordinates>
@@ -26,7 +26,7 @@ fg=red</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>250</x>
-      <y>20</y>
+      <y>0</y>
       <w>280</w>
       <h>170</h>
     </coordinates>
@@ -48,7 +48,7 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>10</x>
-      <y>360</y>
+      <y>370</y>
       <w>270</w>
       <h>340</h>
     </coordinates>
@@ -57,6 +57,7 @@ Package::com.talentuno.website
 Profile
 --
 -id: Long
++role: Role
 +firstName: String
 +lastName: String
 +middleName: String
@@ -91,7 +92,7 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>600</x>
-      <y>10</y>
+      <y>20</y>
       <w>210</w>
       <h>220</h>
     </coordinates>
@@ -116,7 +117,7 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>10</x>
-      <y>180</y>
+      <y>190</y>
       <w>210</w>
       <h>170</h>
     </coordinates>
@@ -137,7 +138,7 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>590</x>
-      <y>240</y>
+      <y>250</y>
       <w>210</w>
       <h>210</h>
     </coordinates>
@@ -159,8 +160,8 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>530</y>
+      <x>300</x>
+      <y>600</y>
       <w>210</w>
       <h>130</h>
     </coordinates>
@@ -178,8 +179,8 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>360</y>
+      <x>300</x>
+      <y>450</y>
       <w>210</w>
       <h>150</h>
     </coordinates>
@@ -199,7 +200,7 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>590</x>
-      <y>460</y>
+      <y>470</y>
       <w>210</w>
       <h>150</h>
     </coordinates>
@@ -218,8 +219,29 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>10</x>
-      <y>20</y>
+      <x>300</x>
+      <y>300</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::com.talentuno.website
+Role
+--
+ORGANISATION
+RECRUITER
+RECRUIT
+...
+--
+Responsibilities
+-- Institution in which course was completed</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
       <w>210</w>
       <h>150</h>
     </coordinates>
